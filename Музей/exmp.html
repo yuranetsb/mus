@@ -31,13 +31,17 @@ a {
 
 
 codeHeadS {
-  background: #DDEFC3;
+  background: black;
   border-radius: 6px;
   display: block;
-  font: 20px/24px "Source Code Pro", Arial, sans-serif;
-  padding: 10px;
   text-align: center;
-  height: 50px;
+}
+
+codeHeadS img {
+  max-width: 100%; /* Устанавливаем максимальную ширину изображения в блоке codeTextF */
+  height: auto; /* Автоматическая высота для поддержки соотношения сторон */
+  display: block; /* Исправляет пробелы между изображениями и текстом */
+  margin: 0 auto; /* Центрируем изображение в блоке */
 }
 
 codeHeadA {
@@ -45,9 +49,9 @@ codeHeadA {
   border-radius: 6px;
   display: block;
   font: 20px/24px "Source Code Pro", Arial, sans-serif;
-  padding: 10px;
   text-align: center;
-  height: 50px;
+  padding: 63px;
+
 }
 
 codeMainS {
@@ -96,7 +100,7 @@ codeTextF {
 }
 
 codeTextF img {
-  max-width: 35%; /* Устанавливаем максимальную ширину изображения в блоке codeTextF */
+  max-width: 40%; /* Устанавливаем максимальную ширину изображения в блоке codeTextF */
   height: auto; /* Автоматическая высота для поддержки соотношения сторон */
   display: block; /* Исправляет пробелы между изображениями и текстом */
   margin: 0 auto; /* Центрируем изображение в блоке */
@@ -132,7 +136,7 @@ h3{
 
 <section>
   <codeHeadS>
-      <h1>РЯЗАНСКИЙ</h1>
+      <p><img src='your_logo.png' /></p>
       </codeHeadS>
 </section>
 
