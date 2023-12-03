@@ -18,7 +18,7 @@ button {
     color: black;
     cursor: pointer;
     padding: 10px;
-    font: 22px/22px "Source Code Pro";
+    font: 27px/27px "Source Code Pro";
 }
 
 a {
@@ -28,28 +28,43 @@ a {
     text-align: left;
 }
 
-
-
 codeHeadS {
   background: black;
   border-radius: 6px;
   display: block;
   text-align: center;
-  padding: 0px;
+  padding: 0;
+  width: 100%;
+  height: 167px; 
+}
+
+codeHeadA p {
+  font: Arial;
+  font-size: 40px;
+  margin: 0em;
+  padding: 60px;
 }
 
 codeHeadS img {
-  max-width: 100%; /* Устанавливаем максимальную ширину изображения в блоке codeTextF */
+  max-width: 100%;
 }
 
 codeHeadA {
+  
   background: #C1D9B2;
   border-radius: 6px;
   display: block;
-  font: 20px/24px "Source Code Pro", Arial, sans-serif;
   text-align: center;
-  padding: 63px;
+  padding: 0;
+  width: 100%;
+  height: 167px;
+}
 
+codeHeadA h1 {
+  font: Arial;
+  font-size: 40px;
+  margin: 0em;
+  padding: 60px;
 }
 
 codeMainS {
@@ -70,18 +85,15 @@ codeMainA {
   padding: 15px;
   text-align: justify;
   height: 540px; /* Задаем фиксированную высоту */
-  }
-
+}
 
 codeTextS { 
   border-radius: 6px;
-  color: #fff;
   display: block;
 }
 
 codeTextA {
   border-radius: 6px;
-  color: #fff;
   display: block;
   text-align: right;
 }
@@ -93,7 +105,7 @@ codeTextF {
   display: block;
   padding: 15px;
   text-align: justify;
-  height: 395px; /* Задаем фиксированную высоту */
+  height: 385px; /* Задаем фиксированную высоту */
   overflow: auto; /* Добавляем прокрутку при необходимости */
 }
 
@@ -104,21 +116,18 @@ codeTextF img {
   margin: 0 auto; /* Центрируем изображение в блоке */
 }
 
-
-
-
-section, aside, text{
-  margin: 25 2% 25px 1.5%;
+section, aside{
+  margin: 10 10 45 10;
 }
 
-section{
+section {
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 aside {
   float: right;
-  width: 68%;
+  width: 66%;
 }
 
 footer {
@@ -126,7 +135,7 @@ footer {
   margin-bottom: 0;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 </style>
@@ -134,14 +143,14 @@ h3{
 
 <section>
   <codeHeadS>
-      <p><img src='your_logo.png' /></p>
-      </codeHeadS>
+	<img src='your_logo.png' />
+  </codeHeadS>
 </section>
 
 <aside>
   <codeHeadA>
-      <h1>МАКЕТ ГОРОДА РЯЗАНИ</h1>
-      </codeHeadA>
+	<h1>МАКЕТ ГОРОДА РЯЗАНИ</h1>
+  </codeHeadA>
 </aside>
 
 <section>
