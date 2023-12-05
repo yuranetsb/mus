@@ -4,7 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
+
+		@font-face {
+    			font-family: 'Gilroy-Light';
+    			src: url('Gilroy-Light/Gilroy-Black.ttf') format('truetype');
+    
+		}
+
 		body {
+			font-family: Gilroy-Light, sans-serif;
 			background-color: #DDEFC3;
 			margin: 0;
 		}
@@ -18,14 +26,13 @@
 			border: none;
 			border-radius: 6px;
             		cursor: pointer;
-            		padding: 10px;
+            		padding: 10px,10px;
             		font: 27px "Source Code Pro";
 		}
 
-        	a{text-decoration: none;}
-
-
-		codeHeadS, codeHeadA, codeMainS, codeMainA, codeTextS, codeTextA {
+        	a{color: black;text-decoration:  none;}
+			
+			codeHeadS, codeHeadA, codeMainS, codeMainA,codeTextF {
 			border-radius: 10px;
 			display: block;
 		}
@@ -58,6 +65,9 @@
 			background: #C1D9B2;
 			margin:35px 30px 0px 0px;
 			padding:35px;
+			text-align: center;
+			overflow: auto;
+			font-size:30px;
 		}
 
         codeMainS {
@@ -65,6 +75,7 @@
             overflow: auto;
 			margin:30px 0px 0px 30px;
 			padding: 35px;
+font-size:20px;
 			
         }
 
@@ -76,20 +87,18 @@
         }
 
         codeTextA {
-            background: grey;
 			text-align: justify;
 			overflow: auto;
 		}
 
 		codeTextS {
-		    background: grey;
 			text-align: justify;
 			overflow: auto;
 		}
 		
 		codeTextF {
 			text-align: justify;
-			height: 100%;
+			height: 435px;
 			overflow: auto;
 		}
 
@@ -116,7 +125,7 @@
 
     <aside>
         <codeHeadA>
-            <!-- Content for codeHeadA -->
+            <h1>Макет города Рязани</h1>
         </codeHeadA>
     </aside>
 
@@ -135,8 +144,8 @@
         <codeMainA>
             <section>
                 <codeTextS>
-                    <a href='Экспонат1_ENG.html'><b>ENG</b></a><br>
-                    <a href='Экспонат1_CH.html'><b>CH</b></a>
+                    <a href='Экспонат1_ENG.html'><h2>EN</a><br>
+                    <a href='Экспонат1_CH.html'>CH</h2></a>
                 </codeTextS>
             </section>
             <aside>
@@ -146,8 +155,8 @@
             </aside>
             <footer>
                 <codeTextF>
-                    <h3>Переяславль Рязанский (XI–XVIII вв.)</h3>
-                    <p>1.1. Основание города Переяславля Рязанского</p>
+                    <h2>Переяславль Рязанский (XI–XVIII вв.)</h3>
+                    <p>Основание города Переяславля Рязанского</p>
                     <p>Письменные источники</p>
                     <p>Запись о заложении Переяславля была обнаружена в XIX в. на полях книги XV–XVI вв. с религиозными текстами – Псалтыри. Кто-то из ее владельцев на свободном месте переписал из недошедшего до нас источника важное для него сообщение: «В лето 6603 (1095 г. по современному летоисчислению) был заложен град Переяславль Рязанский у церкви святого Николы Старого». У историков есть большие сомнения в достоверности этой даты, потому что она взята из неизвестного науке источника. Возможно, при переписывании была допущена ошибка в датировке, т.к. в летописях Переяславль впервые упомянут лишь спустя 200 лет, под 1300 годом.</p>
                     <p><img src='img0.png' alt='Image 0'></p>
