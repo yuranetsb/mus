@@ -5,107 +5,144 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 
-		@font-face {
-    			font-family: 'Gilroy-Light';
-    			src: url('Gilroy-Light/Gilroy-Black.ttf') format('truetype');
-    
-		}
+	@font-face {
+    		font-family: 'Gilroy-Black';
+    		src: local('Gilroy Black'), local('Gilroy-Black'),
+        	url('Gilroy-Black.woff2') format('woff2'),
+        	url('Gilroy-Black.woff') format('woff'),
+        	url('Gilroy-Black.ttf') format('truetype');
+    		font-weight: 900;
+    		font-style: normal;
+  	}
 
-		body {
-			font-family: Gilroy-Light, sans-serif;
-			background-color: #DDEFC3;
-			margin: 0;
-		}
+	@font-face {
+    		font-family: 'Gilroy-Bold';
+    		src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        	url('Gilroy-Bold.woff2') format('woff2'),
+        	url('Gilroy-Bold.woff') format('woff'),
+        	url('Gilroy-Bold.ttf') format('truetype');
+    		font-weight: 700;
+    		font-style: normal;
+  	}	
 
-		section {float: left;}
-        	aside {float: right;}
-		footer {clear: both;}
+	@font-face {
+    		font-family: 'Gilroy-Light';
+    		src: local('Gilroy Light'), local('Gilroy-Light'),
+        	url('Gilroy-Light.woff2') format('woff2'),
+        	url('Gilroy-Light.woff') format('woff'),
+        	url('Gilroy-Light.ttf') format('truetype');
+    		font-weight: 300;
+    		font-style: normal;
+  	}
+
+	@font-face {
+		font-family: 'Gilroy-Regular';
+    		src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        	url('Gilroy-Regular.woff2') format('woff2'),
+        	url('Gilroy-Regular.woff') format('woff'),
+        	url('Gilroy-Regular.ttf') format('truetype');
+    		font-weight: 400;
+    		font-style: normal;
+  	}
+
+	body {
+    		font-family: 'Gilroy-Black', sans-serif;
+    		background-color: #DDEFC3;
+    		margin: 0;
+	}
 
 
-		button {
-			border: none;
-			border-radius: 6px;
-            		cursor: pointer;
-            		padding: 10px,10px;
-            		font: 27px "Source Code Pro";
-		}
 
-        	a{color: black;text-decoration:  none;}
+	section {float: left;}
+        aside {float: right;}
+	footer {clear: both;}
+
+
+	button {
+		border: none;
+		border-radius: 6px;
+            	cursor: pointer;
+            	padding: 10px,10px;
+            	font: 27px "Source Code Pro";
+	}
+
+        a{color: black;text-decoration:  none;}
 			
-			codeHeadS, codeHeadA, codeMainS, codeMainA,codeTextF {
-			border-radius: 10px;
-			display: block;
-		}
+	codeHeadS, codeHeadA, codeMainS, codeMainA {
+		border-radius: 10px;
+		display: block;
+	}
 
-		codeHeadS, codeMainS {
-			width: 31vw;
-		}
+	codeHeadS, codeMainS {
+		width: 31vw;
+	}
 
-		codeHeadA, codeMainA {
-            		width: 52vw;
-		}
+	codeHeadA, codeMainA {
+            	width: 52vw;
+	}
 
-		codeHeadS, codeHeadA {
-			height: 90px;
-		}
+	codeHeadS, codeHeadA {
+		height: 120px;
+	}
 
-		codeMainS, codeMainA {
-            		height: 475px;
-		}
+	codeMainS, codeMainA {
+            	height: 475px;
+	}
 
 
         codeHeadS {
-			background: #DDEFC3;
-			margin:35px 0px 0px 30px;
-			padding:35px;
-			
-		}
+		background: #DDEFC3;
+		margin:35px 0px 0px 30px;
+		padding:35px;
+	}
 
-		codeHeadA {
-			background: #C1D9B2;
-			margin:35px 30px 0px 0px;
-			padding:35px;
-			text-align: center;
-			overflow: auto;
-			font-size:30px;
-		}
+	codeHeadA {
+		background: #C1D9B2;
+		margin:35px 30px 0px 0px;
+		padding:35px;
+		text-align: center;
+		overflow: auto;
+		font-size:30px;
+	}
 
         codeMainS {
-            background: #C1D9B2;
-            overflow: auto;
-			margin:30px 0px 0px 30px;
-			padding: 35px;
-font-size:20px;
-			
-        }
+		background: #C1D9B2;
+		overflow: auto;
+		margin:30px 0px 0px 30px;
+		padding: 35px;
+		font-size:20px;
+	}
 
         codeMainA {
-            background: #FFFFFF;
-            overflow: auto;
-			margin:30px 30px 0px 0px;
-			padding: 35px;
+		background: #FFFFFF;
+		overflow: auto;
+		margin:30px 30px 0px 0px;
+		padding: 35px;
         }
 
         codeTextA {
-			text-align: justify;
-			overflow: auto;
-		}
+		text-align: justify;
+		overflow: auto;
+	}
 
-		codeTextS {
-			text-align: justify;
-			overflow: auto;
-		}
+	codeTextS {
+		text-align: justify;
+		overflow: auto;
+	}
 		
-		codeTextF {
-			text-align: justify;
-			height: 435px;
-			overflow: auto;
-		}
+	codeTextF {
+		font-family: 'Gilroy-Regular', sans-serif;
+		font-size:20px;
+		text-align: justify;
+		height: 435px;
+		overflow: auto;
+	}
 
 		codeHeadS img {
 			width: 100%;
-			height: auto;
+			height: 100%;
 			display: block;
+			margin: 0 auto;
 		}
 		codeTextF img {
 			max-width: 40%;
@@ -154,11 +191,11 @@ font-size:20px;
             </aside>
             <footer>
                 <codeTextF>
-                    <h1>Переяславль Рязанский (XI–XVIII вв.)</h1>
-                    <h2>Основание города Переяславля Рязанского</h2>
-                    <h2>Письменные источники</h2>
-                    <h2>Запись о заложении Переяславля была обнаружена в XIX в. на полях книги XV–XVI вв. с религиозными текстами – Псалтыри. Кто-то из ее владельцев на свободном месте переписал из недошедшего до нас источника важное для него сообщение: «В лето 6603 (1095 г. по современному летоисчислению) был заложен град Переяславль Рязанский у церкви святого Николы Старого». У историков есть большие сомнения в достоверности этой даты, потому что она взята из неизвестного науке источника. Возможно, при переписывании была допущена ошибка в датировке, т.к. в летописях Переяславль впервые упомянут лишь спустя 200 лет, под 1300 годом.</h2>
-                    <h2><img src='img0.png' alt='Image 0'></h2>
+                    <h3>Переяславль Рязанский (XI–XVIII вв.)</h3>
+                    <p>Основание города Переяславля Рязанского</p>
+                    <p>Письменные источники</p>
+                    <p>Запись о заложении Переяславля была обнаружена в XIX в. на полях книги XV–XVI вв. с религиозными текстами – Псалтыри. Кто-то из ее владельцев на свободном месте переписал из недошедшего до нас источника важное для него сообщение: «В лето 6603 (1095 г. по современному летоисчислению) был заложен град Переяславль Рязанский у церкви святого Николы Старого». У историков есть большие сомнения в достоверности этой даты, потому что она взята из неизвестного науке источника. Возможно, при переписывании была допущена ошибка в датировке, т.к. в летописях Переяславль впервые упомянут лишь спустя 200 лет, под 1300 годом.</p>
+                    <p><img src='img0.png' alt='Image 0'></p>
                 </codeTextF>
             </footer>
         </codeMainA>
