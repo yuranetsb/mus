@@ -4,7 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		body {background-color: #DDEFC3;}
+		body {
+			background-color: #DDEFC3;
+			margin: 0;
+		}
 
 		section {float: left;}
         	aside {float: right;}
@@ -28,11 +31,11 @@
 		}
 
 		codeHeadS, codeMainS {
-			width: 36vw;
+			width: 32vw;
 		}
 
 		codeHeadA, codeMainA {
-            		width: 56vw;
+            		width: 52vw;
 		}
 
 		codeHeadS, codeHeadA {
@@ -40,33 +43,51 @@
 		}
 
 		codeMainS, codeMainA {
-            		height: 500px;
+            		height: 475px;
 		}
 
 
-        	codeHeadS {
+        codeHeadS {
 			background: #DDEFC3;
 			margin:35px 0px 0px 30px;
+			padding:35px;
+			
 		}
 
 		codeHeadA {
 			background: #C1D9B2;
 			margin:35px 30px 0px 0px;
+			padding:35px;
 		}
 
-        	codeMainS {
-            		background: #C1D9B2;
-            		overflow: auto;
+        codeMainS {
+            background: #C1D9B2;
+            overflow: auto;
 			margin:30px 0px 0px 30px;
-        	}
+			padding: 35px;
+			
+        }
 
-        	codeMainA {
-            		background: #FFFFFF;
-            		overflow: auto;
+        codeMainA {
+            background: #FFFFFF;
+            overflow: auto;
 			margin:30px 30px 0px 0px;
-        	}
+			padding: 35px;
+        }
 
-        	codeTextF {
+        codeTextA {
+            background: grey;
+			text-align: justify;
+			overflow: auto;
+		}
+
+		codeTextS {
+		    background: grey;
+			text-align: justify;
+			overflow: auto;
+		}
+		
+		codeTextF {
 			text-align: justify;
 			height: 100%;
 			overflow: auto;
@@ -84,8 +105,7 @@
 			display: block;
 			margin: 0 auto;
 		}
-
-    </style>
+	</style>
 </head>
 <body>
     <section>
@@ -102,10 +122,12 @@
 
     <section>
         <codeMainS>
+		<codeTextMS>
             <a href='Экспонат1_Раздел1_RUS.html'><h2>Переяславль Рязанский (XI–XVIII вв.)</h2></a>
             <a href='Экспонат1_Раздел2_RUS.html'><h2>Рязань – центр губернии (1778–1929 гг.)</h2></a>
             <a href='Экспонат1_Раздел3_RUS.html'><h2>Рязань в XX веке</h2></a><br>
             <a href='Экспонат1_Галерея_RUS.html'><h2>ГАЛЕРЕЯ</h2></a>
+		</codeTextMS>
         </codeMainS>
     </section>
 
